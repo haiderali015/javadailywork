@@ -7,43 +7,172 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class thirdA extends AppCompatActivity {
-    ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
+        ImageView img = (ImageView) findViewById(R.id.img1);
 
-        img=(ImageView) findViewById(R.id.img1);
-        String aplhabet1 = getIntent().getStringExtra("alphabets[1]");
-        String aplhabet2 = getIntent().getStringExtra("alphabets[2]");
+        Bundle bundle = getIntent().getExtras();
+        if(bundle!=null)
+        {
+            int res_img = bundle.getInt("apple");
+            img.setImageResource(res_img);
+        }
 
-        img.setVisibility(View.VISIBLE);
+        ImageView img2 = (ImageView) findViewById(R.id.img2);
+
+        Bundle bundle2 = getIntent().getExtras();
+        if(bundle2!=null)
+        {
+            int res_img = bundle2.getInt("banana");
+            img2.setImageResource(res_img);
+        }
+        ImageView img3 = (ImageView) findViewById(R.id.img3);
+
+        Bundle bundle3 = getIntent().getExtras();
+        if(bundle3!=null)
+        {
+            int res_img = bundle.getInt("cat");
+            img3.setImageResource(res_img);
+        }
+        ImageView img4 = (ImageView) findViewById(R.id.img4);
+
+        Bundle bundle4 = getIntent().getExtras();
+        if(bundle4!=null)
+        {
+            int res_img = bundle4.getInt("dog");
+            img4.setImageResource(res_img);
+        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
 //
-//        img=(ImageView) findViewById(R.id.img2);
-//        String aplhabet2 = getIntent().getStringExtra("alphabets[2]");
-//        img.setVisibility(View.VISIBLE);
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
 //
-//        img=(ImageView) findViewById(R.id.img3);
-//        String aplhabet3 = getIntent().getStringExtra("alphabets[3]");
-//        img.setVisibility(View.VISIBLE);
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
 //
-//        img=(ImageView) findViewById(R.id.img4);
-//        String aplhabet4 = getIntent().getStringExtra("alphabets");
-//        img.setVisibility(View.VISIBLE);
-
-        img.setImageResource(R.drawable.b);
-
-
-//        String imagename1 = "a.png";
-//        int res1 = getResources().getIdentifier(imagename1, "drawable", this.getPackageName());
-//        img= (ImageView)findViewById(R.id.img1);
-//        img.setImageResource(res1);
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
 //
-//        String imagename2 = "b.png";
-//        int res2 = getResources().getIdentifier(imagename2, "drawable", this.getPackageName());
-//        img= (ImageView)findViewById(R.id.img2);
-//        img.setImageResource(res2);
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//        ImageView img = (ImageView) findViewById(R.id.img1);
+//
+//        Bundle bundle = getIntent().getExtras();
+//        if(bundle!=null)
+//        {
+//            int res_img = bundle.getInt("apple");
+//            img.setImageResource(res_img);
+//        }
+//
+
 
 
 
