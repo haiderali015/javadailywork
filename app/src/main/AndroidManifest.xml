@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaDailyWork">
         <activity
+            android:name=".thirdA"
+            android:exported="false" />
+        <activity
             android:name=".secondA"
             android:exported="false" />
         <activity

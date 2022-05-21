@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".secondA">
+    tools:context=".thirdA">
 
-    <ListView
-        android:id="@+id/alphabetlist"
+    <ImageView
+
+        android:id="@+id/img1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:cacheColorHint="#E15757" />
-
+        android:src="@drawable/a"
+        android:layout_height="354dp" />
 
 
 </RelativeLayout>
