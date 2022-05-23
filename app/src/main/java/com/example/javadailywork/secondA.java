@@ -1,5 +1,4 @@
 package com.example.javadailywork;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ClipData;
@@ -216,6 +215,38 @@ public class secondA extends AppCompatActivity {
             }
         });
 
+        Button quack =(Button) findViewById(R.id.q);
+        quack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(secondA.this,thirdA.class);
+                intent.putExtra("quack",R.drawable.quack);
+                startActivity(intent);
+
+            }
+        });
+
+        Button rabbit =(Button) findViewById(R.id.r);
+        rabbit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(secondA.this,thirdA.class);
+                intent.putExtra("rabbit",R.drawable.rabbit);
+                startActivity(intent);
+
+            }
+        });
+
+        Button star =(Button) findViewById(R.id.s);
+        star.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(secondA.this,thirdA.class);
+                intent.putExtra("str1",R.drawable.str1);
+                startActivity(intent);
+
+            }
+        });
 
         Button ten =(Button) findViewById(R.id.t);
         ten.setOnClickListener(new View.OnClickListener() {
@@ -264,6 +295,16 @@ public class secondA extends AppCompatActivity {
             }
         });
 
+        Button xray =(Button) findViewById(R.id.x);
+        xray.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(secondA.this,thirdA.class);
+                intent.putExtra("xray",R.drawable.xray);
+                startActivity(intent);
+
+            }
+        });
 
         Button yogurt =(Button) findViewById(R.id.y);
         yogurt.setOnClickListener(new View.OnClickListener() {
