@@ -36,15 +36,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        btn2=findViewById(R.id.exam);
-//        btn2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(getApplicationContext(),fourthA.class);
-//                startActivity(i);
-//
-//            }
-//        });
+        btn2=findViewById(R.id.exam);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(),fourthA.class);
+                startActivity(i);
+
+            }
+        });
 
 
     }
